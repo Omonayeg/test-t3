@@ -111,7 +111,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin-top: -70px;
+    margin-top: -55px;
   }
 
   .landing-content h2 {
@@ -122,9 +122,12 @@ body {
     text-align: left;
     font-size: 0.8rem;
   }
+  .inputs {
+    padding: 25px;
+   
+  }
   .carousel {
-    position: relative;
-    margin-top: -40px;
+    display: none;
   }
 }
 
