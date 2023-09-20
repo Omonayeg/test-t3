@@ -8,9 +8,158 @@
   sans-serif;
 }
 
-/* .sortable-container {
-mar
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* .container {
+  min-height: 100vh;
+  padding: 10px 2px 20px;
 } */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+/* HomeStyles.css */
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.landing-content {
+  text-align: left;
+  padding: 20px;
+}
+.landing-header {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.descrip {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+}
+
+.login-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.inputs .input {
+  margin-bottom: 10px;
+}
+
+.inputs .input input {
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.inputs .button button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+
+button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.h6-footer {
+  padding: 20px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+
+.landing-content h2 {
+  font-size: 3rem;
+  padding:  10px 0;
+}
+
+.landing-content p {
+  text-align: left;
+  font-size: 1rem;
+  padding: 15px 0 20px;
+}
+
+.carousel-slide img {
+  width: 100%; /* Make images fill the slide */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  margin: 0 10px; /* Add margin between images */
+}
+
+.landing-content h6 {
+  padding-top: 10px;
+}
+
+
+.form-container h2 {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .page {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h6-footer {
+    margin-top: 20px;
+  }
+
+  .landing-content h2 {
+    font-size: 2rem;
+  }
+  
+  .landing-content p {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+}
+
 
 .sortable-list {
   display: grid;
@@ -31,7 +180,7 @@ mar
 
 .sortable-item img {
   max-width: 100%; /* Make sure the image doesn't exceed its container */
-  height: auto; /* Maintain the aspect ratio of the image */
+  height: 100%; /* Maintain the aspect ratio of the image */
 }
 
 
@@ -49,168 +198,4 @@ mar
   .sortable-list {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-}
-
-/* styles.css */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.light-mode {
-  background-color: #ffffff; /* Default light mode background */
-  color: #000000; /* Default light mode text color */
-}
-
-.light-mode .modal-content {
-  background-color: #ffffff; /* Default light mode modal background */
-  color: #000000; /* Default light mode modal text color */
-}
-
-.dark-mode {
-  background-color: #031629; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
-}
-
-.dark-mode .modal-content {
-  background-color: #031629; /* Dark mode background */
-  color: #ffffff; /* Dark mode modal text color */
-}
-.container {
-  min-height: 100vh;
-  padding: 10px 2px 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.user-icon img {
-  cursor: pointer;
-}
-
-.toggle-button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.toggle-button:hover {
-  background-color: #0056b3;
-}
-
-
-
-.landing-content {
-  text-align: left;
-  margin: 10px 8px 2px;
-  padding: 10px 20px;
-}
-
-.landing-content h2 {
-  font-size: 3rem;
-  padding:  10px 0;
-}
-
-.landing-content p {
-  text-align: left;
-  font-size: 1.1rem;
-  /* width: 100px; */
-  padding: 15px 0 20px;
-}
-
-.carousel-slide img {
-  width: 100%; /* Make images fill the slide */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
-  margin: 0 10px; /* Add margin between images */
-}
-
-.landing-content h6 {
-  padding-top: 10px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-}
-
-.modal-content input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.modal-content button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
-  width: 50%;
-}
-
-.modal-content button:hover {
-  background-color: #0056b3;
-}
-
-
-.close {
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  float: right;
-}
-
-.close:hover {
-  color: #999;
-}
-
-.form-container h2 {
-  font-size: 1.5rem;
-  padding: 20px;
-}
-/* Responsive styles */
-@media (max-width: 768px) {
-  /* .header {
-    flex-direction: flex;
-    align-items: flex-start;
-  } */
-
-  .toggle-button {
-    margin-top: 10px;
-  }
-
-  .modal-content {
-    padding: 20px;
-    max-width: 90%;
-  }
- 
 }
