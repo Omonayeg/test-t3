@@ -1,5 +1,27 @@
 # Getting Started with Create React App
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCWPTxBJjoiTHRSS8LkwiNPyv1Rb-r5OgA",
+  authDomain: "gallary-app-dnd.firebaseapp.com",
+  projectId: "gallary-app-dnd",
+  storageBucket: "gallary-app-dnd.appspot.com",
+  messagingSenderId: "967070059215",
+  appId: "1:967070059215:web:a71590366c0878d3ff85ba",
+  measurementId: "G-5XD07MRSNQ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
