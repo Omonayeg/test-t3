@@ -1,65 +1,45 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: "Poppins";
 }
 
 /* styles.css */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* .container {
-  min-height: 100vh;
-  padding: 10px 2px 20px;
-} */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  
+  background-image: url("./assets/bg-intro-desktop.png");
+  background-position: cover;
 }
 
 /* HomeStyles.css */
 
-
-.page {
+.home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  gap: 30;
+  margin-top: -90px;
 }
 
 .landing-content {
-  text-align: left;
+  text-align: left !important;
   padding: 20px;
 }
-.landing-header {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 10px;
+
+.landing-content h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  padding:  10px 0;
 }
 
 .descrip {
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
-  max-width: 800px;
-}
-
-.login-header {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
+  max-width: 500px;
 }
 
 .inputs {
@@ -67,9 +47,14 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 400px;
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #ccc;
   border-radius: 10px;
+}
+
+.inputs h2 {
+  text-align: center;
+  padding: 7px;
 }
 
 .inputs .input {
@@ -78,23 +63,25 @@ body {
 
 .inputs .input input {
   max-width: 100%;
-  padding: 15px;
+  padding: 20px;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
-.inputs .button button {
+.inputs .btn button {
   padding: 10px 20px;
   border-radius: 5px;
   background: #007BFF;
   color: #fff;
   border: none;
   cursor: pointer;
-  max-width: 100%;
+  width: 100%;
 }
 
 
-button:hover {
+.inputs .btn button:hover {
   background: #0056b3;
+  transition: ease-in-out 0.5ms;
 }
 
 .error {
@@ -103,71 +90,64 @@ button:hover {
   text-align: center;
 }
 
-.h6-footer {
-  padding: 20px;
-  margin-top: 90px;
-  text-align: center;
+.carousel {
+  position: relative;
+  margin-top: -150px;
 }
 
 
-.landing-content h2 {
-  font-size: 3rem;
-  padding:  10px 0;
-}
-
-.landing-content p {
-  text-align: left;
-  font-size: 1rem;
-  padding: 15px 0 20px;
-}
-
-.carousel-slide img {
-  width: 100%; /* Make images fill the slide */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
-  margin: 0 10px; /* Add margin between images */
-}
-
-.landing-content h6 {
-  padding-top: 10px;
+.carousel1 {
+  position: relative;
+  margin-top: -160px;
 }
 
 
-.form-container h2 {
-  font-size: 1.5rem;
-  padding: 20px;
-}
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .page {
+  .home {
     margin: 5px;
     padding: 5px;
     display: flex;
     flex-direction: column;
-  }
-
-  .h6-footer {
-    margin-top: 20px;
+    height: 100vh;
+    margin-top: -70px;
   }
 
   .landing-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .landing-content p {
     text-align: left;
     font-size: 0.8rem;
   }
+  .carousel {
+    position: relative;
+    margin-top: -40px;
+  }
+}
+
+
+.gallery .account-details {
+  padding: 10px;
+}
+
+.gallery h2 {
+  font-family: "Poppins", "Helvetica Neue";
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
 
 .sortable-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   gap: 10px;
+  gap: 10px;
   padding: 20px;
   cursor: grab;
-  margin: 30px;
+  margin: 2px 20px 12px;
 }
 
 .sortable-item {
@@ -180,12 +160,21 @@ button:hover {
 
 .sortable-item img {
   max-width: 100%; /* Make sure the image doesn't exceed its container */
-  height: 100%; /* Maintain the aspect ratio of the image */
+  height: auto; /* Maintain the aspect ratio of the image */
 }
 
 
 .sortable-ghost {
   opacity: 0.5;
+}
+
+.gallery .foot {
+  display: flex; 
+  flex-direction: column;
+  gap: 20;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 @media (max-width: 768px) {

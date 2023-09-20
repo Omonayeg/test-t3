@@ -4,6 +4,18 @@ import { useNavigate } from "react-router-dom";
 import { AuthData } from "../../auth/AuthWrapper";
 // import "./HomeStyles.css";  // Import the CSS styles
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import one from "../../assets/one.jpg";
+import two from "../../assets/two.jpg";
+import three from "../../assets/three.jpg";
+import five from "../../assets/five.jpg";
+import four from "../../assets/four.jpg";
+import six from "../../assets/six.jpg";
+
+    
+
 export const Home = () => {
   const navigate = useNavigate();
   const { login } = AuthData();
@@ -21,11 +33,59 @@ export const Home = () => {
       setErrorMessage(error);
     }
   };
+  const carouselSettings = {
+     infinite: true,
+     speed: 3000,
+     slidesToShow: 5,
+     slidesToScroll: 1,
+     autoplay: true, // Enable autoplay
+     autoplaySpeed: 3000,
+     arrows: false,
+   };
+ 
+   const carouselSlides = [
+     {
+       id: 1,
+       content: <img src={one}style={{maxWidth: "270px"}}  alt="img1" />,
+     },
+     {
+       id: 2,
+       content: <img src={two} style={{maxWidth: "270px"}} alt="Img2" />,
+     },
+     {
+       id: 3,
+       content: <img src={three} style={{maxWidth: "270px"}} alt="Img3" />,
+     },
+     {
+       id: 4,
+       content: <img src={four} style={{maxWidth: "270px"}} alt="Img4" />,
+     },
+     {
+       id: 5,
+       content: <img src={six} style={{maxWidth: "270px"}} alt="Img6" />,
+     },
+     {
+       id: 6,
+       content: <img src={five} style={{maxWidth: "270px"}} alt="Img5" />,
+     },
+   ];
+  const renderSlides = () => {
+     return carouselSlides.map((slide) => (
+       <div key={slide.id} className="carousel-slide">
+         {slide.content}
+       </div>
+     ));
+   };
 
   return (
-    <div className="page" style={{padding:"0px"}}>
+     <>
+     <div className="carousel1">
+        <Slider {...carouselSettings}>{renderSlides()}</Slider>
+      </div>
+    <div className="home">
+
       <div className="landing-content">
-        <h2>Gallery App (DND)</h2>
+        <h2>My Gallary App </h2> 
         <p className="descrip">
           Step into our dynamic gallery where art comes alive through
           drag-and-drop interaction. Explore a vibrant collection of artworks,
@@ -33,10 +93,11 @@ export const Home = () => {
           intuitive interface allows you to engage with art like never before,
           customizing your viewing journey.
         </p>
+        <h5 className="footer">By Will Omonaye</h5>
       </div>
 
       <div className="inputs">
-        <h2>Log IN</h2>
+        <h2>Sign In</h2>
         <div className="input">
           <input
             value={formData.userName}
@@ -53,14 +114,16 @@ export const Home = () => {
             type="password"
           />
         </div>
-        <div className="button">
+        <div className="btn">
           <button onClick={doLogin}>Log in</button>
         </div>
         {errorMessage ? <div className="error">{errorMessage}</div> : null}
       </div>
 
     </div>
-
-
+<div className="carousel">
+        <Slider {...carouselSettings}>{renderSlides()}</Slider>
+      </div>
+</>
   );
 };
