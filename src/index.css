@@ -92,13 +92,13 @@ body {
 
 .carousel {
   position: relative;
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 
 
 .carousel1 {
   position: relative;
-  margin-top: -160px;
+  /* margin-top: -160px; */
 }
 
 
@@ -129,6 +129,40 @@ body {
   .carousel {
     display: none;
   }
+}
+
+/* @media (max-width: 812px) {
+  .home {
+    margin-top: 85px;
+    margin-bottom: 10px;
+  }
+} */
+
+
+@media (max-width: 1080px) {
+  .home {
+    margin: 5px;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+
+  .landing-content {
+    padding-top: 8px;
+  }
+
+  .carousel1{
+    display: none;
+  }
+
+  .carousel{
+    display: none;
+  }
+  
+  
 }
 
 

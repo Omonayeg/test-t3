@@ -121,9 +121,9 @@ export const Home = () => {
       </div>
 
     </div>
-<div className="carousel">
+{/* <div className="carousel">
         <Slider {...carouselSettings}>{renderSlides()}</Slider>
-      </div>
+      </div> */}
 </>
   );
 };
