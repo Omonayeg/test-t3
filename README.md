@@ -87,3 +87,7 @@ git pull upstream main
 9.  Push changes to your new branch: 
 ```bash
 git push origin your-current-branch-name
+...
+
+
+### Make a Pull request.
