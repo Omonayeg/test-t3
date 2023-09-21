@@ -1,73 +1,93 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">My Gallery App</h1>
+My Gallery App is a react based drag and drop image gallery. Users can be able to login and view the gallery and also be able to drag and drop images across the gallery.
+<hr/>
 
-## Available Scripts
+<hr/>
 
-In the project directory, you can run:
+#  Features 
 
-### `npm start`
+- Aunthentication: users can Login
+- Drag and drop: users can drag  and drop images in the gallery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<hr/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#  Technology
 
-### `npm test`
+My Gallery App is built using the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJS
+- React-Router Private Routes (For Authentication )
 
-### `npm run build`
+<hr/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#  How to Run the Website on Your System
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Step 1: Download and Extract the Code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Firstly, download the entire website code and extract the ZIP file to a folder on your local system.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Step 2: Run the Website
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open your code editor (such as VS Code) and navigate to the project directory. Then, open a terminal and run the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run dev
+```
+This will start the application. Open a web browser and navigate to http://localhost:3000 to access the website.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#  Demo 
 
-## Learn More
+- Check out our live demo at
+  https://vocal-treacle-4084ab.netlify.app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 😍 Contribution
+Contributions are always welcome, open a **Pull Request** and help us improve our project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  Fork this repository and create a project folder on your local machine
 
-### Code Splitting
+2. Navigate to the terminal (pointing to your project folder/directory), Clone and then open it up on your prefered code editor
+```bash 
+git clone https://github.com/Omonayeg/test-t3.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+3.  Open terminal and set upstream branch:  
+```bash 
+git remote add upstream https://github.com/Omonayeg/test-t3.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+4.  Pull upstream to get the latest update from the original repo (https://github.com/Omonayeg/test-t3.git)
+```bash
+git pull upstream main
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5.  Create a new branch for the task your are doing eg: 
+```bash
+git checkout -b support-module
+```
 
-### Advanced Configuration
+6.  After making changes, do
+```bash
+git add .
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+7.  Commit your changes with a descriptive commit message 
+```bash
+git commit -m "commit message"
+```
 
-### Deployment
+8.  To make sure there are no conflicts:
+```bash
+git pull upstream main
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+9.  Push changes to your new branch: 
+```bash
+git push origin your-current-branch-name
+...
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## Live Link to My Gallery App
-(https://vocal-treacle-4084ab.netlify.app/)
+### Make a Pull request.
