@@ -36,6 +36,9 @@ Open your code editor (such as VS Code) and navigate to the project directory. T
 npm run dev
 ```
 This will start the application. Open a web browser and navigate to http://localhost:3000 to access the website.
+Below are the details to get Logged in:
+Email: user@example.com
+Password: 1Password
 
 #  Demo 
 
