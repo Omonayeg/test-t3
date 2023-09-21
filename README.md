@@ -8,13 +8,13 @@ My Gallery App is a react based drag and drop image gallery. Users can be able t
 #  Features 
 
 - Aunthentication: users can Login
-- Drag and drop: users can day and drop images in the gallery.
+- Drag and drop: users can drag  and drop images in the gallery.
 
 <hr/>
 
 #  Technology
 
-Moviebox is built using the following technologies:
+My Gallery App is built using the following technologies:
 
 - ReactJS
 - React-Router Private Routes (For Authentication )
