@@ -101,7 +101,7 @@ export const Home = () => {
         <div className="input">
           <input
             value={formData.userName}
-            placeholder="Email"
+            placeholder="user@example.com"
             onChange={(e) => setFormData({ userName: e.target.value })}
             type="text"
           />
@@ -109,7 +109,7 @@ export const Home = () => {
         <div className="input">
           <input
             value={formData.password}
-            placeholder="Password"
+            placeholder="1Password"
             onChange={(e) => setFormData({ password: e.target.value })}
             type="password"
           />
